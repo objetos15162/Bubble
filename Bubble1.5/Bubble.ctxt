@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Bubble
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bubble\ here.\r\n\ \r\n\ @author\ Pedro\ Negrete\r\n\ @version\ 30/04/2016\r\n
+comment1.params=gravity\ burst
+comment1.target=Bubble(float,\ float)
+comment1.text=\r\n\ Asigna\ los\ valores\ principales\ de\ cada\ burbuja\r\n\ @param\ gravity\ Resistencia\ a\ la\ gravedad\r\n\ @param\ burst\ Resistencia\ a\ reventarse\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Bubble\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=float\ getGravityResistance()
+comment3.text=\r\n\ @return\ gravityResistance\ Resistencia\ a\ la\ gravedad\r\n
+numComments=4
