@@ -16,5 +16,6 @@ public class World1 extends WorldPlay
     public World1()
     {
         super(9.8F);
+        addCameraFollower(new Drone(), 0, 0);
     }
 }

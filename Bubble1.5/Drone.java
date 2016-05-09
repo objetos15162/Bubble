@@ -6,8 +6,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Pedro Negrete 
  * @version 30/04/2016
  */
-public class Drone extends Actor
+public class Drone extends ScrollActor
 {
+    private static final int MOVE_AMOUNT = 3;
+    
     /**
      * Act - do whatever the Drone wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,13 +18,15 @@ public class Drone extends Actor
     {
         if(Greenfoot.isKeyDown("right")){
             setImage("droneder.png");
-            move(4);
+            getWorld().moveCamera(MOVE_AMOUNT);
         }
         if(Greenfoot.isKeyDown("left")) {
             setImage("droneizq.png");
-            move(-4);
+            getWorld().moveCamera(-MOVE_AMOUNT);
         }
         Greenfoot.delay(8);
         setImage("drone.png");
-    }    
+        turnTowards(getX(), getY());
+        getWorld().setCameraDirection(getRotation());
+    }
 }

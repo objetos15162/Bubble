@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Pedro Negrete
  * @version 30/04/2016
  */
-public class WorldPlay extends World
+public class WorldPlay extends ScrollWorld
 {
 
     private float gravity;
@@ -17,7 +17,7 @@ public class WorldPlay extends World
      */
     public WorldPlay(float worldGravity)
     {    
-        super(600, 300, 1);
+        super(600, 300, 1, 1280, 320);
         gravity = worldGravity;
     }
     
