@@ -14,6 +14,8 @@ public class ScoreBotton extends Botton
      */
     public void act() 
     {
+        super.act();
+        
         if(Greenfoot.mouseClicked(this))
         {
             setImage("scorebreak.png");

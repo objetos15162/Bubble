@@ -15,7 +15,7 @@ public class BubbleWorld extends World
      */
     public BubbleWorld()
     {   
-        super(1100, 600, 1); 
+        super(1000, 545, 1); 
         prepare();
     }
 
@@ -33,5 +33,9 @@ public class BubbleWorld extends World
         addObject(helpbotton,641,387);
         ScoreBotton scorebotton = new ScoreBotton();
         addObject(scorebotton,888,386);
+        levelbotton.setLocation(78,348);
+        playbotton.setLocation(345,346);
+        helpbotton.setLocation(571,342);
+        scorebotton.setLocation(799,343);
     }
 }

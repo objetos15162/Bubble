@@ -14,6 +14,20 @@ public class Botton extends Actor
      */
     public void act() 
     {
+        turnAleatory();
         
     }    
+    /**
+     * TurnAleatory - Hace que la burbuja gire aleatoriamente
+     */
+    public void turnAleatory()
+    {
+       if(Greenfoot.getRandomNumber(100)%2 == 0) {
+         turn(1);
+       }
+       else if( Greenfoot.getRandomNumber(100)%2 == 1) {
+         turn(-1);
+       }
+    }
+    
 }

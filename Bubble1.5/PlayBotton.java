@@ -14,6 +14,8 @@ public class PlayBotton extends Botton
      */
     public void act() 
     {
+       super.act();
+       
         if(Greenfoot.mouseClicked(this))
         {
             setImage("playbreak.png");
@@ -21,6 +23,7 @@ public class PlayBotton extends Botton
             World1 world = new World1();
             Greenfoot.setWorld(world);
         }
+     
         
     }    
 }

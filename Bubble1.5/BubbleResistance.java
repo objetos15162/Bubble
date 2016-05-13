@@ -6,14 +6,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Pedro Negrete 
  * @version 30/04/2016
  */
-public class BubbleResistance extends Bubble
+public class BubbleResistance extends Bubble 
 {
+    private String direccion;
     /**
      * Constructor de la burbuja de resistencia
      */
     public BubbleResistance()
     {
-        super(9, 3);
+        super(9, 3,"down");
+        
     }
     
     /**
@@ -22,12 +24,37 @@ public class BubbleResistance extends Bubble
      */
     public void act() 
     {
+        turn(1);
         super.act();
-        World mundo = getWorld();
-        WorldPlay subMundo = (WorldPlay)mundo;
-        if(getGravityResistance() < subMundo.getGravity()) {
-            setLocation(getX(),
-                        getY() - Math.round(getGravityResistance() - subMundo.getGravity()));
+        detectRebote();
+        moveUp();
+        falling(); 
+        
+    }
+    
+    /**
+     * detectRebote - Detecta si se genero un rebote con un PinchoDown.
+     */
+    public void detectRebote()
+    {
+        if(isTouching(PinchosDown.class)) {
+              super.setDirection("up");
+              
+              
         }
-    }   
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

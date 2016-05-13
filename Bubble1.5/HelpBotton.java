@@ -14,6 +14,8 @@ public class HelpBotton extends Botton
      */
     public void act() 
     {
+        super.act();
+        
         if(Greenfoot.mouseClicked(this))
         {
             setImage("helpbreak.png");
