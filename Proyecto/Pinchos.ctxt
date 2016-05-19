@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Pinchos
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Pinchos\ here.\r\n\ \r\n\ @author\ Isai\ Tovar\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=directionPincho
+comment1.target=Pinchos(java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Pinchos\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Pinchos\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ deleteBubbles()
+comment3.text=\r\n\ deleteBubbles\ -\ Elimina\ burbujas\ si\ choca\ con\ ellas\ \r\n
+comment4.params=
+comment4.target=java.lang.String\ getDirectionPincho()
+comment4.text=\r\n\ getDirectionPincho\ -\ Regresa\ una\ cadena\ con\ la\ direccion\ del\ pincho\ \r\n\ ya\ sea\ "up"\ o\ "down".\r\n\ @Return\ dirPincho\ -\ Direcciondel\ pincho.\ \ \r\n
+numComments=5

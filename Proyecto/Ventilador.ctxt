@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Ventilador
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Ventilador\ here.\r\n\ \r\n\ @author\ Isai\ Tovar\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Ventilador()
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Ventilador\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Ventilador\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ enciendeVentilador()
+comment3.text=\r\n\ enciendeVentilador\ -\ cambia\ la\ imagen\ y\ prende\ ventilador\ \r\n
+comment4.params=
+comment4.target=void\ apagaVentilador()
+comment4.text=\r\n\ apagaVentilador\ -\ cambia\ la\ imagen\ y\ apaga\ ventilador\r\n
+comment5.params=
+comment5.target=void\ giraVentilador()
+comment5.text=\r\n\ giraVentilador\ -\ Gira\ la\ turbina\ si\ se\ presiona\ una\ tecla\ \r\n
+numComments=6
