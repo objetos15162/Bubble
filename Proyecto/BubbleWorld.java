@@ -31,11 +31,21 @@ public class BubbleWorld extends World
         addObject(playbotton,396,386);
         HelpBotton helpbotton = new HelpBotton();
         addObject(helpbotton,641,387);
-        ScoreBotton scorebotton = new ScoreBotton();
-        addObject(scorebotton,888,386);
         levelbotton.setLocation(78,348);
         playbotton.setLocation(345,346);
         helpbotton.setLocation(571,342);
-        scorebotton.setLocation(799,343);
+        helpbotton.setLocation(695,355);
+        playbotton.setLocation(317,517);
+        levelbotton.setLocation(359,355);
+        levelbotton.setLocation(360,352);
+        helpbotton.setLocation(704,355);
+        playbotton.setLocation(99,353);
+        levelbotton.setLocation(359,356);
+        playbotton.setLocation(97,359);
+        helpbotton.setLocation(704,359);
+        levelbotton.setLocation(359,359);
+        levelbotton.setLocation(359,358);
+        levelbotton.setLocation(366,352);
+        levelbotton.setLocation(362,358);
     }
 }

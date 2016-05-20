@@ -33,8 +33,9 @@ public class Pinchos extends Obstacle
      */
     public void act() 
     {
-        move(-1);
+       // move(-1);
         deleteBubbles();
+        super.act();
     }
     
     /**
@@ -68,12 +69,23 @@ public class Pinchos extends Obstacle
         
         if(isTouching(MainBubble.class)) {
           World mundo = this.getWorld();
-          World1 myWorld =(World1) mundo;
+          WorldPlay myWorld =(WorldPlay) mundo;
+          
 
           if(myWorld.getCounterRes().getValue() == 0 ) {
             removeTouching(MainBubble.class); 
+             endGame();
           }
+          else if(myWorld.getCounterRes().getValue() > 0) {
+              
+             myAct = getOneIntersectingObject(MainBubble.class);
+             MainBubble myBubb = (MainBubble) myAct;
+             myBubb.decreaseResistance();
+             
+          }
+          setLocation(getX(),getWorld().getHeight()+200);
         }
+        
         
         if(isTouching(BubblePlus.class)) {
             myAct = getOneIntersectingObject(BubblePlus.class);

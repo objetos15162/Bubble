@@ -80,6 +80,7 @@ public class MainBubble extends Bubble
           WorldPlay myWorld =(WorldPlay) mundo;
           myWorld.getCounterScore().setValue(score);
           myWorld.getCounterRes().setValue(resistance);
+          myWorld.getCounterRes().updateBar();
     }
     
     
@@ -136,7 +137,9 @@ public class MainBubble extends Bubble
     {        
         if(isTouching(BubbleResistance.class)) {
             removeTouching(BubbleResistance.class);
+            if(resistance <10) {
             resistance++;
+        }
         }
     }
     
@@ -189,6 +192,14 @@ public class MainBubble extends Bubble
            setImage(images.get(sizeBubble));               
         }
 
+    }
+    
+    /**
+     * decreaseResistance - Disminuye la resistencia 
+     */
+    public void decreaseResistance()
+    {
+        resistance--;
     }
     
 }

@@ -8,28 +8,33 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class World2 extends WorldPlay
 {
-
     /**
      * Constructor for objects of class World2.
      * 
      */
     public World2()
     {
-        super(10);
+        super(14,15);
+        
     }
     
+    
     /**
-     * act - Este es el metodo actua de World2.
+     * act - Este es el metodo actua de World1.
+     * 
      * 
      */
     public void act()
     {
-        super.act();
-        Counter cont = new Counter();
-        cont = getCounterScore();
-        if(cont.getValue() == 10){
+       super.act();
+       if(getTimerBee().millisElapsed() > 7000) {
+            generateBee();
+            getTimerBee().mark();
+        }
+        if(getCounterScore().getValue() == getLimitScore()){
             World3 world = new World3();
             Greenfoot.setWorld(world);
         }
+        
     }
 }

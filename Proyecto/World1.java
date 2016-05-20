@@ -14,21 +14,22 @@ public class World1 extends WorldPlay
      */
     public World1()
     {
-        super(9.8F);
+        super(9.8F,10);
     }
     
     /**
      * act - Este es el metodo actua de World1.
      * 
+     * 
      */
     public void act()
     {
         super.act();
-        Counter cont = new Counter();
-        cont = getCounterScore();
-        if(cont.getValue() == 10){
+
+        if(getCounterScore().getValue() == getLimitScore()){
             World2 world = new World2();
             Greenfoot.setWorld(world);
         }
     }
+    
 }

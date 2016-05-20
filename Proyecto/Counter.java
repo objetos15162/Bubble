@@ -89,8 +89,16 @@ public class Counter extends Actor
             updateImage();
         }
 
-        images = imagesSave;
-        background = images.get(target);
+
+    }
+    /**
+     * UpdateBar - Actualiza la imagen del contador
+     * 
+     */
+    public  void updateBar()
+    {
+                images = imagesSave;
+        background = images.get(value);
     }
 
     /**

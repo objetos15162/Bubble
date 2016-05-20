@@ -1,64 +1,69 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-
 /**
  * Write a description of class Bee here.
  * 
- * @author Pedro Negrete 
+ * @author (your name) 
  * @version (a version number or a date)
  */
 public class Bee extends Obstacle
 {
-    private int move;
-    private int direction;
-    
-    /**
-     * Constructor de la clase Bee
-     */
-    public Bee()
-    {
-        move = Greenfoot.getRandomNumber(2);
-        direction = 1;
-    }
-    
+    private int initPosX;
+    private int initPosY;
+    private String direction;
     /**
      * Act - do whatever the Bee wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-        if(move == 1){
-            moveHorizontal();
-        }else{
-            moveVertical();
-        }
-    }
-    
+        // Add your action code here.
+        deleteBubbles();
+        moveBeeUpDown();
+        move(-2);
+    }    
     /**
-     * moveHorizontal- Se encarga del movimiento de las abejas en las que su 
-     * variable move fue 1, estas se moveran horizontalmente
+     * deleteBubbles - Elimina burbujas si choca con ellas 
      */
-    public void moveHorizontal()
-    {
-        setLocation(getX()+1, getY());
-    }
-    
-    /**
-     * moveVertical- Se encarga del movimiento de las abejas en las que su 
-     * variable move fue diferente de 1, estas se moveran verticalmente
-     */
-    public void moveVertical()
-    {
-        if(getY() > 10 && direction == 1){
-            setLocation(getX(),getY()-1);
-        }else if(getY() <= 10){
-            direction = 0;
-        }
-        if(getY()<500 && direction ==0){
-            setLocation(getX(),getY()+1);
-        }else if(getY()>=500){
-            direction = 1;
-        }
-    }
+    public void deleteBubbles()
+    {   
+       Actor myAct ;
+        
+        
+          if(isTouching(MainBubble.class)) {
+          World mundo = this.getWorld();
+          WorldPlay myWorld =(WorldPlay) mundo;
+          
 
+          if(myWorld.getCounterRes().getValue() == 0 ) {
+            removeTouching(MainBubble.class);
+            endGame();
+          }
+          else {
+             myAct = getOneIntersectingObject(MainBubble.class);
+             MainBubble myBubb = (MainBubble) myAct;
+             myBubb.decreaseResistance();
+          }
+         
+          
+          }
+            
+      }
+     
+     
+     /**
+      * moveBeeUpDown- Mueve la abeja hacia arriba y hacia abajo
+      */
+     public void moveBeeUpDown()
+     {
+         
+         if(Greenfoot.getRandomNumber(20)<10) {
+         setLocation(getX(),getY()+2);
+         }
+         else {
+         setLocation(getX(),getY()-2);
+        }
+             
+        
+     }
 }

@@ -9,27 +9,52 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class World3 extends WorldPlay
 {
 
+    private SimpleTimer timeTrees;
+    private SimpleTimer timeBee;
     /**
-     * Constructor for objects of class World3.
+     * Constructor for objects of class World2.
      * 
      */
     public World3()
     {
-        super(25);
-        Counter cont = new Counter();
-        cont = getCounterScore();
-        if(cont.getValue() == 10){
+        super(17,20);
+        timeTrees = new SimpleTimer();
+    }
+    
+    
+    /**
+     * act - Este es el metodo actua de World1.
+     * 
+     * 
+     */
+    public void act()
+    {
+        super.act();
+
+        
+        if(timeTrees.millisElapsed() > 5000) {
+            generateTree();
+            timeTrees.mark();
+        }
+        
+
+        if(getCounterScore().getValue() == getLimitScore()){
+            setBackground("ganaste1.png");
+            Greenfoot.stop();
             World3 world = new World3();
             Greenfoot.setWorld(world);
         }
     }
     
     /**
-     * act - Este es el metodo actua de World3.
-     * 
+     * gnerateTrees - genera arboles aleatoriamente
      */
-    public void act()
+    public void generateTree()
     {
-        super.act();
+         Tree newTree = new Tree();
+        addObject(newTree,getCameraX()+getCameraX(),461);    
     }
+    
+    
+
 }

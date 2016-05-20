@@ -18,15 +18,18 @@ public class WorldPlay extends ScrollWorld
     private SimpleTimer timePincho;
     private SimpleTimer timeBubPlus;
     private Ventilador ventilador;
+    private SimpleTimer timeBee ;
+    private int limitScore; 
     
     /**
      * Constructor for objects of class WorldPlay.
      * @param worldGravity Gravedad del mundo
      */
-    public WorldPlay(float worldGravity)
+    public WorldPlay(float worldGravity,int limitScore)
     {    
-        super(1000, 545, 1, 8000, 545);
+        super(1000, 545, 1, 160000, 545);
         gravity = worldGravity;
+        this.limitScore = limitScore;
         countRes = new Counter("Resistencia: ");
         countScore = new Counter("Score: ");
         playerBubble = new MainBubble();
@@ -36,8 +39,10 @@ public class WorldPlay extends ScrollWorld
         timeBubScore = new SimpleTimer();
         timePincho = new SimpleTimer();
         timeBubPlus = new SimpleTimer();
+        timeBee = new SimpleTimer();
         prepare();
     }
+    
     
     /**
      * 
@@ -60,6 +65,22 @@ public class WorldPlay extends ScrollWorld
             timeBubPlus.mark();
         }
     }
+    /**
+     * getTimeBee - regresa el tiempo de la abeja
+     * @param - timeBee -tiempo de la abeja
+     */
+    public SimpleTimer getTimerBee(){
+          return timeBee;
+    }
+    /**
+     * getLimitScore - Regresa el limite de puntos del nivel
+     * @Param limitScore - limite de puntos
+     */
+    public int getLimitScore()
+    {
+        return limitScore;
+    }
+
     
     /**
      * @return gravity Gravedad del mundo
@@ -118,7 +139,7 @@ public class WorldPlay extends ScrollWorld
         else {
            newPinchos = new Pinchos("down");
         }
-           addObject(newPinchos,getWidth(),Greenfoot.getRandomNumber(getHeight()+ 100));      
+           addObject(newPinchos,getCameraX()+getCameraX(),Greenfoot.getRandomNumber(getHeight()+ 100));      
     }
     
     /**
@@ -159,5 +180,14 @@ public class WorldPlay extends ScrollWorld
         iconbs.setLocation(104,76);
         iconbs.setLocation(104,77);
         iconbs.setLocation(105,78);
+    }
+    
+    /**
+     * gnerateBee - genera Abejas aleatoriamente
+     */
+    public void generateBee()
+    {
+         Bee newBee = new Bee();
+        addObject(newBee,getCameraX()+getCameraX(),Greenfoot.getRandomNumber(getHeight())+200);    
     }
 }

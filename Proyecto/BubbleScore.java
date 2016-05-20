@@ -17,6 +17,7 @@ public class BubbleScore extends Bubble
         super(9, 3,"down");
     }
     
+    
     /**
      * Act - do whatever the BubbleResistence wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
