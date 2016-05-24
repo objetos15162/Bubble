@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Write a description of class MainBubble here.
+ * Burbuja principal. El movimiento de esta burbuja es de acuerdo al dron y el ventilador
  * 
  * @author Pedro Negrete, Isai Tovar
  * @version 19/05/2016
@@ -12,6 +12,7 @@ public class MainBubble extends Bubble
     private int score;
     private ArrayList < GreenfootImage > images;//almacena una coleccion de imagenes de la burbuja de diferentes tamaños
     private int sizeBubble;
+    private GreenfootSound bubbleSound;
     /**
      * Constructor de la clase MainBubble
      */
@@ -23,6 +24,7 @@ public class MainBubble extends Bubble
         resistance = 0;
         sizeBubble = 0;
         images = new ArrayList < GreenfootImage>();
+        bubbleSound = new GreenfootSound("bubbleSound.mp3");
         addImages();
     }
     
@@ -37,6 +39,16 @@ public class MainBubble extends Bubble
            images.add(new GreenfootImage("bubbleTam"+numImage+".png"));
         }
     }
+    
+    /**
+     * setSizeBubble - pone un tamaño para la burbuja.
+     * @param newSize - es el nuevo tamalo de la burbuja
+     */
+    public void setSizeBubble(int newSize)
+    {
+        sizeBubble = newSize;
+    }
+    
     
     /**
      * Act - do whatever the MainBubble wants to do. This method is called whenever
@@ -55,6 +67,7 @@ public class MainBubble extends Bubble
         }
         
         if(isTouching(BubblePlus.class)) {
+             bubbleSound.play();
             removeTouching(BubblePlus.class);
             increaseSizeBubble();
         }
@@ -136,10 +149,11 @@ public class MainBubble extends Bubble
     public void removeBubbleResistance()
     {        
         if(isTouching(BubbleResistance.class)) {
+           bubbleSound.play();
             removeTouching(BubbleResistance.class);
             if(resistance <10) {
-            resistance++;
-        }
+              resistance++;
+            }
         }
     }
     
@@ -150,11 +164,13 @@ public class MainBubble extends Bubble
     public void removeBubbleScore()
     {        
         if(isTouching(BubbleScore.class)) {
+           bubbleSound.play();
             removeTouching(BubbleScore.class);
             score++;
            
         }
     }
+    
     
     /**
      * icreaseSizeBubble - incrementa el tamaño de la burbuja
@@ -187,8 +203,7 @@ public class MainBubble extends Bubble
            
            if(myAct.getDirectionPincho() == "up" && super.getDirection() == "down" 
                                 || myAct.getDirectionPincho() == "down" && super.getDirection() == "up")
-            resistance--;
-            sizeBubble--;    
+            resistance--;    
            setImage(images.get(sizeBubble));               
         }
 

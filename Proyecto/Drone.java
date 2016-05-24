@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Drone here.
+ * Drone, sirve para darle movimiento a la burbuja y al ventilador
  * 
  * @author Pedro Negrete, Isai Tovar
  * @version 19/05/2016

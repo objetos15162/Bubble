@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Obstacle here.
+ * Obstaculos del juego
+ * Se encarga de dar por terminado el juego
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar
+ * @version 24/05/2016
  */
 abstract public class Obstacle extends ScrollActor
 {
@@ -15,7 +16,7 @@ abstract public class Obstacle extends ScrollActor
     public void act() 
     {
         // Add your action code here.
-        move(-1);
+        move(-2);
     }    
     
     /**
@@ -23,9 +24,10 @@ abstract public class Obstacle extends ScrollActor
      */
     public void endGame()
     {
-            World world = getWorld();
-            world.setBackground("perdiste1.png");
-            Greenfoot.delay(100);
+            WorldPlay world = (WorldPlay)getWorld();
+            world.removeAllObjects();
+            world.setBackground(world.getBackgroundLose());
+            Greenfoot.delay(500);
             BubbleWorld world2 = new BubbleWorld();
             Greenfoot.setWorld(world2);
             

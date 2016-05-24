@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BubblePlus here.
+ * Burbuja para aumentar el tamaño de la burbuja principal
  * 
  * @author Pedro Negrete, Isai Tovar
- * @version (a version number or a date)
+ * @version 24/05/2016
  */
 public class BubblePlus extends Bubble
 {

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BottonLevel3 here.
+ * Botón para empezar el nivel 3
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar 
+ * @version 24/05/2016
  */
 public class BottonLevel3 extends Botton
 {

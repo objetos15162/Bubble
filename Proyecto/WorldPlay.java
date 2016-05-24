@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class WorldPlay here.
+ * Clase empleada para todos los mundos en los que se puede jugar
+ * Maneja la creación de obstaculos y el score para pasar de nivel
  * 
  * @author Pedro Negrete
  * @version 30/04/2016
@@ -12,6 +13,7 @@ public class WorldPlay extends ScrollWorld
     private float gravity;
     private Counter countScore;
     private Counter countRes;
+   /// private Counter countTotalScore;
     private MainBubble playerBubble;
     private SimpleTimer timeBubRes;
     private SimpleTimer timeBubScore;
@@ -20,6 +22,9 @@ public class WorldPlay extends ScrollWorld
     private Ventilador ventilador;
     private SimpleTimer timeBee ;
     private int limitScore; 
+    private GreenfootImage backgroundWin;
+    private GreenfootImage backgroundLose;
+    private int totalScore;
     
     /**
      * Constructor for objects of class WorldPlay.
@@ -32,20 +37,34 @@ public class WorldPlay extends ScrollWorld
         this.limitScore = limitScore;
         countRes = new Counter("Resistencia: ");
         countScore = new Counter("Score: ");
+        /*countTotalScore = new Counter("Total: ");
+        countTotalScore.setImage("Counter.png");*/
+        countRes.setImage("counterplus.png");
+        countScore.setImage("counterplus.png");
         playerBubble = new MainBubble();
         addObject(playerBubble,500,250);
         ventilador = new Ventilador();
-        timeBubRes = new SimpleTimer();
-        timeBubScore = new SimpleTimer();
-        timePincho = new SimpleTimer();
-        timeBubPlus = new SimpleTimer();
-        timeBee = new SimpleTimer();
+        backgroundWin = null;
+        backgroundLose = null;
+        initializesTimers();
+        countScore.setRemaining(limitScore);
+        totalScore = 0;
         prepare();
     }
     
+    /**
+     * setImagesBackgrounds - pone imagenes de ganar o perder
+     * @Param nameImageWin - nombre de la imagen de ganador.
+     * @Param nameImageLose - nombre de la imagen de perder
+     */
+    public void setImagesBackgrounds(String nameImageWin,String nameImageLose)
+    {
+        backgroundWin = new GreenfootImage(nameImageWin);
+        backgroundLose = new GreenfootImage(nameImageLose);   
+    }
     
     /**
-     * 
+     * Este es el metodo act de la clase WorldPlay
      */
     public void act(){
          if(timeBubRes.millisElapsed() > 3000) {
@@ -64,7 +83,50 @@ public class WorldPlay extends ScrollWorld
             generateBubblePlus();
             timeBubPlus.mark();
         }
+        
+      /*  setTotalScore(countScore.getValue());
+        countTotalScore.setValue(totalScore);
+        */
     }
+    
+    /**
+     * setTotalScore - va acumulando la puntuacion total
+     * @Param - La acumulacion de Score.
+     */
+    public void setTotalScore(int newScore)
+    {
+        totalScore += newScore ;
+    }
+    
+    /**
+     * getBackgroundWin - regresa la imagen o fondo de ganador
+     */
+    public GreenfootImage getBackgroundWin()
+    {
+        return backgroundWin;
+    }
+    
+    /**
+     * getBackgroundLose - regresa la imagen o fondo de perdedor
+     */
+    public GreenfootImage getBackgroundLose()
+    {
+        return backgroundLose;
+    }
+    
+    /**
+     * initializesTimers - Inicializa todos los contadores del mundo 
+     * 
+     */
+    public void initializesTimers()
+    {
+        timeBubRes = new SimpleTimer();
+        timeBubScore = new SimpleTimer();
+        timePincho = new SimpleTimer();
+        timeBubPlus = new SimpleTimer();
+        timeBee = new SimpleTimer();
+    }
+    
     /**
      * getTimeBee - regresa el tiempo de la abeja
      * @param - timeBee -tiempo de la abeja
@@ -170,7 +232,7 @@ public class WorldPlay extends ScrollWorld
         addObject(ventilador,501,296);
         addObject(getCounterScore(),172,80);
         addObject(getCounterRes(),172,50);
-
+        //addObject(countTotalScore,getWidth()-100,65);
         IconBR iconbr = new IconBR();
         addObject(iconbr,107,53);
         iconbr.setLocation(104,48);
@@ -190,4 +252,28 @@ public class WorldPlay extends ScrollWorld
          Bee newBee = new Bee();
         addObject(newBee,getCameraX()+getCameraX(),Greenfoot.getRandomNumber(getHeight())+200);    
     }
+    
+    /**
+     * evaluatedScore - Evalua si se han conseguido los puntos necesarios para
+     * pasar de un nivel a otro retorna un booleano.
+     * @Return  estatus- Estado de la puntuacion "true" o "false".
+     */
+    public boolean evaluatedScore()
+    {
+        
+        boolean estatus  = false;
+        
+        if(countScore.getValue() == limitScore) {
+            estatus = true;
+        }
+        return estatus;
+    } 
+    
+    /**
+     * removeAllObjects - Elimina todos los onjetos del mundo
+     */
+     public void removeAllObjects()
+     {
+         removeObjects(getObjects(Actor.class));
+     }
 }

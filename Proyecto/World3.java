@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class World3 here.
+ * Nivel #3
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar 
+ * @version 24/05/2016
  */
 public class World3 extends WorldPlay
 {
@@ -18,6 +18,7 @@ public class World3 extends WorldPlay
     public World3()
     {
         super(17,20);
+        super.setImagesBackgrounds("ganaste3.png","perdiste3.png");
         timeTrees = new SimpleTimer();
     }
     
@@ -38,10 +39,13 @@ public class World3 extends WorldPlay
         }
         
 
-        if(getCounterScore().getValue() == getLimitScore()){
-            setBackground("ganaste1.png");
-            Greenfoot.stop();
-            World3 world = new World3();
+        if(evaluatedScore() == true) {
+            WorldPlay myWorld = this; 
+            removeAllObjects();
+            setBackground(super.getBackgroundWin());
+            Greenfoot.delay(500);
+            World4 world = new World4();
+            world.setTotalScore(myWorld.getLimitScore());
             Greenfoot.setWorld(world);
         }
     }

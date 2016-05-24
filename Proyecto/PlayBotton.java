@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class PlayBotton here.
+ * Botón para empezar a jugar
  * 
  * @author Pedro Negrete
  * @version 30/04/2016

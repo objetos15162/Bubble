@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Botton here.
+ * Clase que da movimiento a los botones
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar 
+ * @version 24/05/2016
  */
 public class Botton extends Actor
 {

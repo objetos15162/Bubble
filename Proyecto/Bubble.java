@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bubble here.
+ * Se encarga de las funciones comunes de todas las burbujas
  * 
  * @author Pedro Negrete, Isai Tovar
  * @version 19/05/2016

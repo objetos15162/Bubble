@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Help here.
+ * Pantalla de ayuda
  * 
  * @author Pedro Negrete
  * @version 30/04/2016
@@ -16,7 +16,7 @@ public class Help extends World
     public Help()
     {    
         super(1000, 545, 1); 
-    prepare();
+        prepare();
     }
     
     /**

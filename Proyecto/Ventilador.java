@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ventilador here.
+ * Sirve para dar dirección a la burbuja, su movimiento es a base del drone
  * 
  * @author Isai Tovar
- * @version (a version number or a date)
+ * @version 24/05/2016
  */
 public class Ventilador extends Actor
 {
@@ -61,10 +61,10 @@ public class Ventilador extends Actor
     public void giraVentilador()
     {
         if(Greenfoot.isKeyDown("a")) {
-            turn(1);
+            turn(4);
         }
         if(Greenfoot.isKeyDown("s")) {
-            turn(-1);
+            turn(-4);
         }
         
     }

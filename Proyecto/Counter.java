@@ -41,10 +41,12 @@ public class Counter extends Actor
     private String prefix;
     private ArrayList < GreenfootImage > images;
     private ArrayList < GreenfootImage > imagesSave;
+    private int remaining;
     
     public Counter()
     {
         this(new String());
+        remaining = 0;
     }
 
     /**
@@ -52,7 +54,7 @@ public class Counter extends Actor
      */
     public Counter(String prefix)
     {
-        background = getImage();  // get image from class
+         // get image from class
         value = 0;
         target = 0;
         this.prefix = prefix;
@@ -60,6 +62,24 @@ public class Counter extends Actor
         imagesSave = new ArrayList< GreenfootImage >();
         addImages(images);
         addImages(imagesSave);
+    }
+    
+    /**
+     * setRemaining - agrega numeros restantes o cantidades o puntajes que se tienen
+     * que alcanzar.
+     */
+    public void setRemaining(int remaining)
+    {
+        this.remaining = remaining; 
+    }
+    
+    /**
+     * setImage - pone una imagen
+     * @Param nameImageFile - nombre de la imagen
+     */
+    public void setImage(String nameImageFile)
+    {
+        background = new GreenfootImage(nameImageFile);
         updateImage();
     }
     
@@ -70,7 +90,7 @@ public class Counter extends Actor
     public void addImages(ArrayList < GreenfootImage > listImages)
     {
         int numImage = 0; 
-        for(; numImage <= 10 ; numImage++) {
+        for(; numImage < 11 ; numImage++) {
            listImages.add(new GreenfootImage("counter"+numImage+".png"));
         }
     }
@@ -144,7 +164,11 @@ public class Counter extends Actor
     private void updateImage()
     {
         GreenfootImage image = new GreenfootImage(background);
-        GreenfootImage text = new GreenfootImage(prefix + value, 22, Color.WHITE, transparent);
+         GreenfootImage text = new GreenfootImage(prefix + value +" / " +remaining, 22, Color.WHITE, transparent);
+        if(remaining == 0) {
+              text = new GreenfootImage(prefix + value , 22, Color.WHITE, transparent);
+        }
+
         
         if (text.getWidth() > image.getWidth() - 20)
         {
@@ -154,5 +178,6 @@ public class Counter extends Actor
         image.drawImage(text, (image.getWidth()-text.getWidth())/2, 
                         (image.getHeight()-text.getHeight())/2);
         setImage(image);
+        
     }
 }

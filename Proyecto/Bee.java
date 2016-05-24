@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bee here.
+ * Obstaculo del tipo abeja
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Pedro Negrete
+ * @version 24/05/2016
  */
 public class Bee extends Obstacle
 {

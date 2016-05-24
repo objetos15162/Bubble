@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class World5 here.
+ * Nivel #5
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar
+ * @version 24/05/2016
  */
 public class World5 extends WorldPlay
 {
@@ -16,8 +16,12 @@ public class World5 extends WorldPlay
     public World5()
     {
       super(30,30);
+      super.setImagesBackgrounds("ganaste5.png","perdiste5.png");
       
     }
+    /**
+     * act de World5
+     */
     public void act()
     {
         super.act();
@@ -26,10 +30,12 @@ public class World5 extends WorldPlay
             getTimerBee().mark();
         }
         
-        if(getCounterScore().getValue() == getLimitScore()){
-            // setBackground("ganaste1.png");
-             Greenfoot.stop();
-             
+        if(evaluatedScore() == true) {
+            
+            setBackground(super.getBackgroundWin());
+            Greenfoot.delay(500);
+            World worldMain = new BubbleWorld();
+            Greenfoot.setWorld(worldMain);           
         }
         
     }

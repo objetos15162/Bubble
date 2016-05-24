@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BubbleResistance here.
+ * Clase para las burbujas que dan más resistencia
  * 
  * @author Pedro Negrete, Isai Tovar
  * @version 19/05/2016

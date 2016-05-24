@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class World2 here.
+ * Nivel #2
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Isai Tovar
+ * @version 24/05/2016
  */
 public class World2 extends WorldPlay
 {
@@ -15,14 +15,12 @@ public class World2 extends WorldPlay
     public World2()
     {
         super(14,15);
+        super.setImagesBackgrounds("ganaste2.png","perdiste2.png");
         
     }
     
-    
     /**
-     * act - Este es el metodo actua de World1.
-     * 
-     * 
+     * act - Este es el metodo actua de World1.  
      */
     public void act()
     {
@@ -31,8 +29,14 @@ public class World2 extends WorldPlay
             generateBee();
             getTimerBee().mark();
         }
-        if(getCounterScore().getValue() == getLimitScore()){
+        
+        if(evaluatedScore() == true) {
+            WorldPlay myWorld = this; 
+            removeAllObjects();
+            setBackground(super.getBackgroundWin());
+            Greenfoot.delay(500);
             World3 world = new World3();
+            world.setTotalScore(myWorld.getLimitScore());
             Greenfoot.setWorld(world);
         }
         

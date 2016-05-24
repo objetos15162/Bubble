@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Pinchos here.
+ * Obstaculo del tipo pinchos
  * 
  * @author Isai Tovar
- * @version (a version number or a date)
+ * @version 24/05/2016
  */
 public class Pinchos extends Obstacle
 {
@@ -73,7 +73,6 @@ public class Pinchos extends Obstacle
           
 
           if(myWorld.getCounterRes().getValue() == 0 ) {
-            removeTouching(MainBubble.class); 
              endGame();
           }
           else if(myWorld.getCounterRes().getValue() > 0) {
@@ -83,7 +82,7 @@ public class Pinchos extends Obstacle
              myBubb.decreaseResistance();
              
           }
-          setLocation(getX(),getWorld().getHeight()+200);
+          //setLocation(getX(),getWorld().getHeight()+200);
         }
         
         

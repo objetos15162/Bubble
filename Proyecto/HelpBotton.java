@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class HelpBotton here.
+ * Botón para mostrar la pantalla de ayuda
  * 
  * @author Pedro Negrete
  * @version 30/04/2016

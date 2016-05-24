@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BubblePlus
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ BubblePlus\ here.\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Burbuja\ para\ aumentar\ el\ tama\u00F1o\ de\ la\ burbuja\ principal\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 24/05/2016\r\n
 comment1.params=
 comment1.target=BubblePlus()
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ BubblePlus\r\n

@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class BubbleWorld here.
+ * Pantalla principal, menú.
  * 
  * @author Pedro Negrete
  * @version 30/04/2016

@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Level here.
+ * Pantalla para seleccionar un nivel especifico
  * 
- * @author Pedro Negrete 
- * @version 30/04/2016
+ * @author Pedro Negrete, Isai Tovar
+ * @version 24/05/2016
  */
 public class Level extends World
 {
@@ -16,7 +16,7 @@ public class Level extends World
     public Level()
     {    
         super(1000, 545, 1);
-      prepare();  
+        prepare();  
     }
      
     /**
