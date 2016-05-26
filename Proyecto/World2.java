@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Nivel #2
+ * Esta clase representa el segundo nivel del juego y hereda de la superclase worldPlay
+ * en ella se crean obstaculos y cambia al siguiente mundo.
  * 
- * @author Isai Tovar
- * @version 24/05/2016
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class World2 extends WorldPlay
 {
@@ -25,7 +27,7 @@ public class World2 extends WorldPlay
     public void act()
     {
        super.act();
-       if(getTimerBee().millisElapsed() > 7000) {
+       if(getTimerBee().millisElapsed() > 5000) {
             generateBee();
             getTimerBee().mark();
         }

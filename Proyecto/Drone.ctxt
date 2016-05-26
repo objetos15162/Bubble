@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Drone
-comment0.text=\r\n\ Drone,\ sirve\ para\ darle\ movimiento\ a\ la\ burbuja\ y\ al\ ventilador\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 19/05/2016\r\n
+comment0.text=\r\nLa\ clase\ Drone\ es\ una\ clase\ definida\ para\ crear\ objetos\ de\ ella\ misma\ con\ el\ fin\ \r\nde\ manipular\ a\ MainBubble,\ contiene\ metodos\ para\ moverse\ y\ un\ objeto\ de\ la\ clase\ Ventilador\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=Drone()
 comment1.text=\r\n\ Este\ es\ el\ Constructor\ de\ Drone\r\n

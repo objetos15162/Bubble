@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Pantalla de ayuda
+ * La clase Help representa el mundo help del juego en el cual se 
+ * muesttra la ayuda del juego asi como un boton de regreso al mundo anterior a el
  * 
  * @author Pedro Negrete
  * @version 30/04/2016
@@ -16,7 +17,7 @@ public class Help extends World
     public Help()
     {    
         super(1000, 545, 1); 
-        prepare();
+    prepare();
     }
     
     /**

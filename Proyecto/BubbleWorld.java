@@ -1,9 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Pantalla principal, menú.
- * 
+ * La clase BubbleWorld representa elmenu de inicio del juego en el cual se 
+ * muesttran todas las opciones help, score y play que contiene el juego, 
  * @author Pedro Negrete
+ * @author German Isai 
  * @version 30/04/2016
  */
 public class BubbleWorld extends World

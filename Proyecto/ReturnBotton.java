@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Botón para regresar a la pantalla principal
+ * Write a description of class ReturnBotton here.
  * 
  * @author Pedro Negrete 
  * @version 30/04/2016

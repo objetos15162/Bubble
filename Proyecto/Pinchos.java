@@ -1,10 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
- * Obstaculo del tipo pinchos
- * 
- * @author Isai Tovar
- * @version 24/05/2016
+ *La clase Obstacle es una subclase definida para eliminar ciertos
+ *objetos de la clase bubble
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class Pinchos extends Obstacle
 {
@@ -33,7 +36,7 @@ public class Pinchos extends Obstacle
      */
     public void act() 
     {
-       // move(-1);
+        move(-2);
         deleteBubbles();
         super.act();
     }
@@ -67,25 +70,7 @@ public class Pinchos extends Obstacle
             }  
         }
         
-        if(isTouching(MainBubble.class)) {
-          World mundo = this.getWorld();
-          WorldPlay myWorld =(WorldPlay) mundo;
-          
-
-          if(myWorld.getCounterRes().getValue() == 0 ) {
-             endGame();
-          }
-          else if(myWorld.getCounterRes().getValue() > 0) {
-              
-             myAct = getOneIntersectingObject(MainBubble.class);
-             MainBubble myBubb = (MainBubble) myAct;
-             myBubb.decreaseResistance();
              
-          }
-          //setLocation(getX(),getWorld().getHeight()+200);
-        }
-        
-        
         if(isTouching(BubblePlus.class)) {
             myAct = getOneIntersectingObject(BubblePlus.class);
             BubblePlus myBubb = (BubblePlus)myAct;
@@ -94,6 +79,25 @@ public class Pinchos extends Obstacle
                  removeTouching(BubblePlus.class);
                
             } 
+        }
+        
+          if(isTouching(MainBubble.class)) {
+          World mundo = this.getWorld();
+          WorldPlay myWorld =(WorldPlay) mundo;
+               
+          if(myWorld.getCounterRes().getValue() == 0 ) {
+             System.out.println(myWorld.getCounterRes().getValue());
+             
+             endGame();
+          }
+          else if(myWorld.getCounterRes().getValue() >  0) {
+              
+             myAct = getOneIntersectingObject(MainBubble.class);
+             MainBubble myBubb = (MainBubble) myAct;
+             myBubb.decreaseResistance();          
+          }
+          setLocation(getX(),getWorld().getHeight()+200); 
+          
         }
      }
      

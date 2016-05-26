@@ -1,10 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Se encarga de las funciones comunes de todas las burbujas
+ *La clase Bubble es una superclase que contiene las caracteristicas o variables de instancia
+ *que tienen en comun objetos de las subclases de Bubble asi como sus comportamientos o 
+ *metodos
  * 
- * @author Pedro Negrete, Isai Tovar
- * @version 19/05/2016
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
  public class Bubble extends Actor
 {

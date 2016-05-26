@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Level
-comment0.text=\r\n\ Pantalla\ para\ seleccionar\ un\ nivel\ especifico\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 24/05/2016\r\n
+comment0.text=\r\n\ La\ clase\ Level\ representa\ el\ mundo\ Level\ del\ juego\ en\ el\ cual\ se\ \r\n\ muesttra\ los\ niveles\ del\ juego\ asi\ como\ un\ boton\ de\ regreso\ al\ mundo\ anterior\ a\ el\r\n\ tambien\ se\ crean\ objetos\ para\ ingresar\ al\ mundo\ o\ nivel\ que\ se\ seleccione.\r\n\ @author\ Pedro\ Negrete\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=Level()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Level.\r\n\ \r\n

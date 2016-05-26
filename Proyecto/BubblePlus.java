@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Burbuja para aumentar el tamaño de la burbuja principal
- * 
- * @author Pedro Negrete, Isai Tovar
- * @version 24/05/2016
+ *La clase BubblePlus es una subclase de Bubble de esta subclase de Bubble 
+ * se pueden crear objetos que dan un plus a MainBubble
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class BubblePlus extends Bubble
 {

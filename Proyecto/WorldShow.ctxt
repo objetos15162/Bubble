@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=WorldShow
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ WorldShow\ here.\r\n\ \r\n\ @author\ Negrete\ Davila\ Pedro,German\ Isai\r\n\ @25/05/2016\r\n
+comment1.params=background
+comment1.target=WorldShow(greenfoot.GreenfootImage)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WorldShow.\r\n
+numComments=2

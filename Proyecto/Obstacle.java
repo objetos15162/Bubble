@@ -1,11 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Obstaculos del juego
- * Se encarga de dar por terminado el juego
- * 
- * @author Isai Tovar
- * @version 24/05/2016
+ *La clase Obstacle es una clase definida para crear objetos que representen obstaculos
+ *esta clase contiene metodos para finalizar el juego
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 abstract public class Obstacle extends ScrollActor
 {
@@ -16,7 +17,8 @@ abstract public class Obstacle extends ScrollActor
     public void act() 
     {
         // Add your action code here.
-        move(-2);
+       // move(-2);
+       
     }    
     
     /**
@@ -25,8 +27,8 @@ abstract public class Obstacle extends ScrollActor
     public void endGame()
     {
             WorldPlay world = (WorldPlay)getWorld();
-            world.removeAllObjects();
-            world.setBackground(world.getBackgroundLose());
+            World worldShow = new WorldShow(world.getBackgroundLose());
+            Greenfoot.setWorld(worldShow);
             Greenfoot.delay(500);
             BubbleWorld world2 = new BubbleWorld();
             Greenfoot.setWorld(world2);

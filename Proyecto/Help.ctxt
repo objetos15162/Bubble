@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Help
-comment0.text=\r\n\ Pantalla\ de\ ayuda\r\n\ \r\n\ @author\ Pedro\ Negrete\r\n\ @version\ 30/04/2016\r\n
+comment0.text=\r\n\ La\ clase\ Help\ representa\ el\ mundo\ help\ del\ juego\ en\ el\ cual\ se\ \r\n\ muesttra\ la\ ayuda\ del\ juego\ asi\ como\ un\ boton\ de\ regreso\ al\ mundo\ anterior\ a\ el\r\n\ \r\n\ @author\ Pedro\ Negrete\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=Help()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Help.\r\n\ \r\n

@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Nivel #4
+ * Esta clase representa el cuarto nivel del juego y hereda de la superclase worldPlay
+ * en ella se crean obstaculos y cambia al siguiente mundo.
  * 
- * @author Isai Tovar
- * @version 24/05/2016
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class World4 extends WorldPlay
 {
@@ -18,15 +20,15 @@ public class World4 extends WorldPlay
         super(25,25);
         super.setImagesBackgrounds("ganaste4.png","perdiste4.png");
         
-    }    
-    
-    /**
+    }    /**
      * act - Este es el metodo actua de World1.
+     * 
+     * 
      */
     public void act()
     {
      super.act();
-       if(getTimerBee().millisElapsed() > 7000) {
+       if(getTimerBee().millisElapsed() > 3000) {
             generateBee();
             getTimerBee().mark();
         }

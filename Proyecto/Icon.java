@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Iconos
+ * Write a description of class Icon here.
  * 
  * @author Isai Tovar
- * @version 24/05/2016
+ * @version (a version number or a date)
  */
 public class Icon extends Actor
 {

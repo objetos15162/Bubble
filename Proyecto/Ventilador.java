@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Sirve para dar dirección a la burbuja, su movimiento es a base del drone
+ * Write a description of class Ventilador here.
  * 
  * @author Isai Tovar
- * @version 24/05/2016
+ * @version (a version number or a date)
  */
 public class Ventilador extends Actor
 {

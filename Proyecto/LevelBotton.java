@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Botón para mostrar la pantalla de niveles
+ * Write a description of class LevelBotton here.
  * 
  * @author Pedro Negrete
  * @version 30/04/2016

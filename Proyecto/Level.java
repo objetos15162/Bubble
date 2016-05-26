@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Pantalla para seleccionar un nivel especifico
- * 
- * @author Pedro Negrete, Isai Tovar
- * @version 24/05/2016
+ * La clase Level representa el mundo Level del juego en el cual se 
+ * muesttra los niveles del juego asi como un boton de regreso al mundo anterior a el
+ * tambien se crean objetos para ingresar al mundo o nivel que se seleccione.
+ * @author Pedro Negrete
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class Level extends World
 {
@@ -16,7 +18,7 @@ public class Level extends World
     public Level()
     {    
         super(1000, 545, 1);
-        prepare();  
+      prepare();  
     }
      
     /**

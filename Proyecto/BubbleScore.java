@@ -1,12 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Burbuja que da los puntos necesarios para pasar de nivel
- * 
- * @author Pedro Negrete, Isai Tovar 
- * @version 19/05/2016
+ *La clase BubbleScore es una subclase de Bubble esta subclase de Bubble 
+ *representa la burbuja que da puntuacion.
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
-
 public class BubbleScore extends Bubble
 {
     /**

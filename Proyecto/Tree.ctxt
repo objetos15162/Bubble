@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Tree
-comment0.text=\r\n\ Obstaculo\ del\ tipo\ \u00E1rbol\r\n\ \r\n\ @author\ Isai\ Tovar\ \r\n\ @version\ 24/05/2016\r\n
+comment0.text=\r\nLa\ clase\ Obstacle\ es\ una\ subclase\ definida\ para\ eliminar\ ciertos\r\nobjetos\ de\ la\ clase\ bubble\r\n\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Arbol\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

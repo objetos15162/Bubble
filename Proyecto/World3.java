@@ -1,16 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Nivel #3
+ * Esta clase representa el tercer  nivel del juego y hereda de la superclase worldPlay
+ * en ella se crean obstaculos y cambia al siguiente mundo.
  * 
- * @author Isai Tovar 
- * @version 24/05/2016
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class World3 extends WorldPlay
 {
 
     private SimpleTimer timeTrees;
-    private SimpleTimer timeBee;
     /**
      * Constructor for objects of class World2.
      * 
@@ -36,6 +37,10 @@ public class World3 extends WorldPlay
         if(timeTrees.millisElapsed() > 5000) {
             generateTree();
             timeTrees.mark();
+        }
+        if(getTimerBee().millisElapsed() > 4000) {
+            generateBee();
+            getTimerBee().mark();
         }
         
 

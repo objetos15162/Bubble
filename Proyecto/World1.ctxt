@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=World1
-comment0.text=\r\n\ Nivel\ \#1\r\n\ \r\n\ @author\ Pedro\ Negrete\r\n\ @version\ 30/04/2016\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ el\ primer\ nivel\ del\ juego\ y\ hereda\ de\ la\ superclase\ worldPlay\r\n\ en\ ella\ se\ crean\ obstaculos\ y\ cambia\ al\ siguiente\ mundo.\r\n\ \r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=World1()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ World1.\r\n\ Hace\ una\ llamada\ al\ constructor\ de\ la\ superclase\r\n\ WorldPlay.\r\n\ \r\n

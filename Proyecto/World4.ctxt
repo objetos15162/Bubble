@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=World4
-comment0.text=\r\n\ Nivel\ \#4\r\n\ \r\n\ @author\ Isai\ Tovar\r\n\ @version\ 24/05/2016\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ el\ cuarto\ nivel\ del\ juego\ y\ hereda\ de\ la\ superclase\ worldPlay\r\n\ en\ ella\ se\ crean\ obstaculos\ y\ cambia\ al\ siguiente\ mundo.\r\n\ \r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=World4()
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ World4.\r\n\ \r\n
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ act\ -\ Este\ es\ el\ metodo\ actua\ de\ World1.\r\n
+comment2.text=\r\n\ act\ -\ Este\ es\ el\ metodo\ actua\ de\ World1.\r\n\ \r\n\ \r\n
 numComments=3

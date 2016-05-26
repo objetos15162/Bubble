@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Botón pa
+ * Write a description of class BottonLevel5 here.
+ * 
  * @author (your name) 
  * @version (a version number or a date)
  */

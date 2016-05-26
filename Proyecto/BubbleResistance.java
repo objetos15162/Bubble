@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Clase para las burbujas que dan más resistencia
- * 
- * @author Pedro Negrete, Isai Tovar
- * @version 19/05/2016
+ *La clase BubbleResistance es una subclase de Bubble esta subclase de Bubble 
+ *genera una Resistencia.
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class BubbleResistance extends Bubble 
 {

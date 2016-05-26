@@ -1,10 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 /**
- * Burbuja principal. El movimiento de esta burbuja es de acuerdo al dron y el ventilador
- * 
- * @author Pedro Negrete, Isai Tovar
- * @version 19/05/2016
+ *La clase MainBubble es una subclase de Bubble esta subclase de Bubble 
+ *representa la burbuja principal del juego y tiene metodos para  
+ *incrementar su tamaño o decrementarlo, eliminar otras burbujas, e ir acumulando 
+ *puntuacion y resistencia
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class MainBubble extends Bubble 
 {
@@ -107,7 +111,7 @@ public class MainBubble extends Bubble
            ventNew = new Ventilador();
            ventNew = getOneIntersectingObject(Ventilador.class);  
            setRotation( ventNew.getRotation());
-           move(1);
+           move(2);
         }
 
     }

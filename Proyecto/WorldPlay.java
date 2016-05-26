@@ -1,10 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Clase empleada para todos los mundos en los que se puede jugar
- * Maneja la creación de obstaculos y el score para pasar de nivel
- * 
- * @author Pedro Negrete
+ * La Clase WordPlay es una Superclase de los distintos mundos o escenarios
+ * del juuego esta Superclase contiene  temporizadores y contadores y otras varianles
+ * de instancia que tienen en comun todos los mundos de juego.
+ * @author Pedro Negretee
+ * @author German Isai
  * @version 30/04/2016
  */
 public class WorldPlay extends ScrollWorld

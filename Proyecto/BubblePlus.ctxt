@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BubblePlus
-comment0.text=\r\n\ Burbuja\ para\ aumentar\ el\ tama\u00F1o\ de\ la\ burbuja\ principal\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 24/05/2016\r\n
+comment0.text=\r\nLa\ clase\ BubblePlus\ es\ una\ subclase\ de\ Bubble\ de\ esta\ subclase\ de\ Bubble\ \r\n\ se\ pueden\ crear\ objetos\ que\ dan\ un\ plus\ a\ MainBubble\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=BubblePlus()
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ BubblePlus\r\n

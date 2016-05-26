@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=BubbleResistance
-comment0.text=\r\n\ Clase\ para\ las\ burbujas\ que\ dan\ m\u00E1s\ resistencia\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 19/05/2016\r\n
+comment0.text=\r\nLa\ clase\ BubbleResistance\ es\ una\ subclase\ de\ Bubble\ esta\ subclase\ de\ Bubble\ \r\ngenera\ una\ Resistencia.\r\n\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=BubbleResistance()
 comment1.text=\r\n\ Constructor\ de\ la\ burbuja\ de\ resistencia\r\n

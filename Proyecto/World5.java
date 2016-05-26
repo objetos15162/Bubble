@@ -1,10 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Nivel #5
+ * Esta clase representa el ultimo nivel del juego y hereda de la superclase worldPlay
+ * en ella se crean obstaculos y cambia a MainBubble.
  * 
- * @author Isai Tovar
- * @version 24/05/2016
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class World5 extends WorldPlay
 {
@@ -19,13 +21,14 @@ public class World5 extends WorldPlay
       super.setImagesBackgrounds("ganaste5.png","perdiste5.png");
       
     }
+    
     /**
-     * act de World5
+     * metodo act de la clase World5.
      */
     public void act()
     {
         super.act();
-       if(getTimerBee().millisElapsed() > 7000) {
+       if(getTimerBee().millisElapsed() > 2000) {
             generateBee();
             getTimerBee().mark();
         }

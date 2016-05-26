@@ -1,10 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
- * Obstaculo del tipo abeja
- * 
- * @author Pedro Negrete
- * @version 24/05/2016
+ *La clase Obstacle es una subclase definida para eliminar ciertos
+ *objetos de la clase bubble
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class Bee extends Obstacle
 {
@@ -20,7 +23,7 @@ public class Bee extends Obstacle
         // Add your action code here.
         deleteBubbles();
         moveBeeUpDown();
-        move(-2);
+        move(-4);
     }    
     /**
      * deleteBubbles - Elimina burbujas si choca con ellas 
@@ -36,7 +39,6 @@ public class Bee extends Obstacle
           
 
           if(myWorld.getCounterRes().getValue() == 0 ) {
-            removeTouching(MainBubble.class);
             endGame();
           }
           else {
@@ -44,7 +46,7 @@ public class Bee extends Obstacle
              MainBubble myBubb = (MainBubble) myAct;
              myBubb.decreaseResistance();
           }
-         
+           setLocation(getX(),getWorld().getHeight()+200); 
           
           }
             

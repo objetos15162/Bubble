@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=MainBubble
-comment0.text=\r\n\ Burbuja\ principal.\ El\ movimiento\ de\ esta\ burbuja\ es\ de\ acuerdo\ al\ dron\ y\ el\ ventilador\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 19/05/2016\r\n
+comment0.text=\r\nLa\ clase\ MainBubble\ es\ una\ subclase\ de\ Bubble\ esta\ subclase\ de\ Bubble\ \r\nrepresenta\ la\ burbuja\ principal\ del\ juego\ y\ tiene\ metodos\ para\ \ \r\nincrementar\ su\ tama\u00F1o\ o\ decrementarlo,\ eliminar\ otras\ burbujas,\ e\ ir\ acumulando\ \r\npuntuacion\ y\ resistencia\r\n\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=MainBubble()
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ MainBubble\r\n

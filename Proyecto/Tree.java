@@ -1,10 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
 /**
- * Obstaculo del tipo árbol
- * 
- * @author Isai Tovar 
- * @version 24/05/2016
+ *La clase Obstacle es una subclase definida para eliminar ciertos
+ *objetos de la clase bubble
+ *
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class Tree extends Obstacle
 {
@@ -15,6 +18,7 @@ public class Tree extends Obstacle
     public void act() 
     {
         // Add your action code here.
+        move(-1);
         deleteBubbles();
         super.act();
     }    

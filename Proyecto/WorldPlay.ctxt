@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=WorldPlay
-comment0.text=\r\n\ Clase\ empleada\ para\ todos\ los\ mundos\ en\ los\ que\ se\ puede\ jugar\r\n\ Maneja\ la\ creaci\u00F3n\ de\ obstaculos\ y\ el\ score\ para\ pasar\ de\ nivel\r\n\ \r\n\ @author\ Pedro\ Negrete\r\n\ @version\ 30/04/2016\r\n
+comment0.text=\r\n\ La\ Clase\ WordPlay\ es\ una\ Superclase\ de\ los\ distintos\ mundos\ o\ escenarios\r\n\ del\ juuego\ esta\ Superclase\ contiene\ \ temporizadores\ y\ contadores\ y\ otras\ varianles\r\n\ de\ instancia\ que\ tienen\ en\ comun\ todos\ los\ mundos\ de\ juego.\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=worldGravity\ limitScore
 comment1.target=WorldPlay(float,\ int)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WorldPlay.\r\n\ @param\ worldGravity\ Gravedad\ del\ mundo\r\n

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Bubble
-comment0.text=\r\n\ Se\ encarga\ de\ las\ funciones\ comunes\ de\ todas\ las\ burbujas\r\n\ \r\n\ @author\ Pedro\ Negrete,\ Isai\ Tovar\r\n\ @version\ 19/05/2016\r\n
+comment0.text=\r\nLa\ clase\ Bubble\ es\ una\ superclase\ que\ contiene\ las\ caracteristicas\ o\ variables\ de\ instancia\r\nque\ tienen\ en\ comun\ objetos\ de\ las\ subclases\ de\ Bubble\ asi\ como\ sus\ comportamientos\ o\ \r\nmetodos\r\n\ \r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=gravity\ burst\ direction
 comment1.target=Bubble(float,\ float,\ java.lang.String)
 comment1.text=\r\n\ Asigna\ los\ valores\ principales\ de\ cada\ burbuja\r\n\ @param\ gravity\ Resistencia\ a\ la\ gravedad\r\n\ @param\ burst\ Resistencia\ a\ reventarse\r\n

@@ -1,10 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+
+
 /**
- * Drone, sirve para darle movimiento a la burbuja y al ventilador
- * 
- * @author Pedro Negrete, Isai Tovar
- * @version 19/05/2016
+ *La clase Drone es una clase definida para crear objetos de ella misma con el fin 
+ *de manipular a MainBubble, contiene metodos para moverse y un objeto de la clase Ventilador
+ * @author Pedro Negretee
+ * @author German Isai
+ * @version 30/04/2016
  */
 public class Drone extends ScrollActor
 {

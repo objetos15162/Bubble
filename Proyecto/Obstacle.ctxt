@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Obstacle
-comment0.text=\r\n\ Obstaculos\ del\ juego\r\n\ \r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\nLa\ clase\ Obstacle\ es\ una\ clase\ definida\ para\ crear\ objetos\ que\ representen\ obstaculos\r\nesta\ clase\ contiene\ metodos\ para\ finalizar\ el\ juego\r\n\r\n\ @author\ Pedro\ Negretee\r\n\ @author\ German\ Isai\r\n\ @version\ 30/04/2016\r\n
 comment1.params=
 comment1.target=void\ act()
 comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Obstacle\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

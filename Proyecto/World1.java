@@ -1,9 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.List;
 /**
- * Nivel #1
+ * Esta clase representa el primer nivel del juego y hereda de la superclase worldPlay
+ * en ella se crean obstaculos y cambia al siguiente mundo.
  * 
- * @author Pedro Negrete
+ * @author Pedro Negretee
+ * @author German Isai
  * @version 30/04/2016
  */
 public class World1 extends WorldPlay
